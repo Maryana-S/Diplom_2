@@ -35,7 +35,7 @@ public class Common {
                 .then()
                 .statusCode(SC_OK)
                 .extract()
-                .as(GetIngredientsResponse.class).getData()[index].get_id();
+                .as(GetIngredientsResponse.class).getData()[index].getId();
     }
 
 }

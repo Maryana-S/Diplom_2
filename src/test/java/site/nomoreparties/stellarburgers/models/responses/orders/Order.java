@@ -1,7 +1,7 @@
 package site.nomoreparties.stellarburgers.models.responses.orders;
 
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonSetter;
-import io.qameta.allure.internal.shadowed.jackson.annotation.Nulls;
+
+import com.google.gson.annotations.SerializedName;
 import lombok.NoArgsConstructor;
 import lombok.Data;
 
@@ -13,7 +13,8 @@ public class Order {
 
     private Ingredients[] ingredients;
 
-    private String _id;
+    @SerializedName(value = "_id")
+    private String id;
 
     private Owner owner;
 

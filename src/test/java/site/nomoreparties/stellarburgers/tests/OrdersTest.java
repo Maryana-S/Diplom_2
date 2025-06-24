@@ -54,7 +54,7 @@ public class OrdersTest extends BaseTest {
                 .as(PostOrderSuccessResponse.class);
 
         assertTrue("Вернулось значение false в поле 'success'", postOrdersSuccessResponse.isSuccess());
-        assertEquals("ID ингредиента в ответе не соответствует переданному в запросе", ingredientId, postOrdersSuccessResponse.getOrder().getIngredients()[0].get_id());
+        assertEquals("ID ингредиента в ответе не соответствует переданному в запросе", ingredientId, postOrdersSuccessResponse.getOrder().getIngredients()[0].getId());
         assertEquals("email пользователя в ответе не соответствует переданному в запросе", email.toLowerCase(), postOrdersSuccessResponse.getOrder().getOwner().getEmail());
     }
 

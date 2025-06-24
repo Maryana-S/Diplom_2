@@ -3,234 +3,234 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "При автроизации пользователя с некорректным значением в поле password, в ответе возвращается код 401 Unauthorized",
-    "uid" : "63d4ffbc3f527d2f",
+    "uid" : "3722ec5df64d9097",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746181646,
-      "stop" : 1750746184973,
-      "duration" : 3327
+      "start" : 1750772671570,
+      "stop" : 1750772676186,
+      "duration" : 4616
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешная авторизация пользователя в системе. Проверка, что значения полей name и email в ответе, соответствуют значениям полей в запросе",
-    "uid" : "799a29fea6794464",
+    "uid" : "9abd4d89eeae266d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746185043,
-      "stop" : 1750746186014,
-      "duration" : 971
+      "start" : 1750772676254,
+      "stop" : 1750772677197,
+      "duration" : 943
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешная авторизация пользователя в системе",
-    "uid" : "4d3545d2f50a6e32",
+    "uid" : "c350879d4cef5221",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746186035,
-      "stop" : 1750746187002,
-      "duration" : 967
+      "start" : 1750772677202,
+      "stop" : 1750772678112,
+      "duration" : 910
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При автроизации пользователя с некорректным значением в поле email, в ответе возвращается код 401 Unauthorized",
-    "uid" : "8e3d37c726abbcc2",
+    "uid" : "bfdf223d40fb3763",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746187007,
-      "stop" : 1750746187893,
-      "duration" : 886
+      "start" : 1750772678131,
+      "stop" : 1750772678952,
+      "duration" : 821
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание заказа без авторизации пользователя в системе",
-    "uid" : "cade1817fa0958b6",
+    "uid" : "da3f16f49174255",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746187897,
-      "stop" : 1750746188914,
-      "duration" : 1017
+      "start" : 1750772678952,
+      "stop" : 1750772679899,
+      "duration" : 947
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание заказа с тремя ингридиентами зарегистрированным пользователем",
-    "uid" : "9879e43a3ed19c5c",
+    "uid" : "197a69c66558943e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746188916,
-      "stop" : 1750746192856,
-      "duration" : 3940
+      "start" : 1750772679901,
+      "stop" : 1750772683298,
+      "duration" : 3397
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь авторизован",
-    "uid" : "8a53fea619dec51",
+    "uid" : "9c49ea96b7aad34c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746192859,
-      "stop" : 1750746193954,
-      "duration" : 1095
+      "start" : 1750772683305,
+      "stop" : 1750772684307,
+      "duration" : 1002
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь не авторизован",
-    "uid" : "c5e2d4e64134bab9",
+    "uid" : "fb5790b5c52d6fa3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746193956,
-      "stop" : 1750746194849,
-      "duration" : 893
+      "start" : 1750772684309,
+      "stop" : 1750772685132,
+      "duration" : 823
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание заказа с тремя ингридиентами незарегистрированным пользователем",
-    "uid" : "ed2c07a56409038",
+    "uid" : "2818844e121219dc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746194857,
-      "stop" : 1750746196082,
-      "duration" : 1225
+      "start" : 1750772685134,
+      "stop" : 1750772686271,
+      "duration" : 1137
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание заказа с авторизацией пользователя в системе, проверка соответсятвия значений email пользователя и id ингредиента",
-    "uid" : "2792d59b2e01f39b",
+    "uid" : "514db5722b3b3a41",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746196083,
-      "stop" : 1750746199752,
-      "duration" : 3669
+      "start" : 1750772686279,
+      "stop" : 1750772689370,
+      "duration" : 3091
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь не авторизован",
-    "uid" : "9fbc9c7fafd546d9",
+    "uid" : "19ab1e28a44f52f0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746199755,
-      "stop" : 1750746200620,
-      "duration" : 865
+      "start" : 1750772689373,
+      "stop" : 1750772690176,
+      "duration" : 803
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь авторизован",
-    "uid" : "114319f89f8d86e6",
+    "uid" : "12d5eeab86b6c90c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746200622,
-      "stop" : 1750746201714,
-      "duration" : 1092
+      "start" : 1750772690178,
+      "stop" : 1750772691176,
+      "duration" : 998
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание уникального пользователя",
-    "uid" : "830f70c8fe761890",
+    "uid" : "97169d861ef74ba2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746201717,
-      "stop" : 1750746202478,
-      "duration" : 761
+      "start" : 1750772691180,
+      "stop" : 1750772691883,
+      "duration" : 703
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании пользователя с незаполненным значением name, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
-    "uid" : "3eadb90d6846cb88",
+    "uid" : "168c121f1a0a214b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746202480,
-      "stop" : 1750746202591,
-      "duration" : 111
+      "start" : 1750772691883,
+      "stop" : 1750772691996,
+      "duration" : 113
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании пользователя с незаполненным значением email, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
-    "uid" : "c90380db55a615db",
+    "uid" : "8052f62d5b492bcb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746202602,
-      "stop" : 1750746202716,
-      "duration" : 114
+      "start" : 1750772691998,
+      "stop" : 1750772692114,
+      "duration" : 116
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Создание уникального пользователя. Проверка, что значения полей name и email в ответе соответствуют значениям полей в запросе",
-    "uid" : "92ef80dabb87585e",
+    "uid" : "13cf11413414f38",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746202718,
-      "stop" : 1750746203478,
-      "duration" : 760
+      "start" : 1750772692115,
+      "stop" : 1750772692800,
+      "duration" : 685
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании пользователя с незаполненным значением password, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
-    "uid" : "ec3d4fac41b96fad",
+    "uid" : "7b24af29b3e6acd2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746203482,
-      "stop" : 1750746203599,
-      "duration" : 117
+      "start" : 1750772692800,
+      "stop" : 1750772692916,
+      "duration" : 116
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "При создании пользователя со значениями email, который был зарегестрирован ранее, в ответе возвращается код 403 Forbidden с сообщением 'User already exists'",
-    "uid" : "1af5adea592b4ddf",
+    "uid" : "3523287a6689b14c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1750746203600,
-      "stop" : 1750746204489,
-      "duration" : 889
+      "start" : 1750772692916,
+      "stop" : 1750772693722,
+      "duration" : 806
     },
     "flaky" : false,
     "newFailed" : false,

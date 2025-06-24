@@ -1,5 +1,6 @@
 package site.nomoreparties.stellarburgers.models.responses.orders;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -7,7 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Ingredients {
 
-    private String _id;
+    @SerializedName(value = "_id")
+    private String id;
 
     private String name;
 
@@ -29,5 +31,6 @@ public class Ingredients {
 
     private String image_large;
 
-    private Integer __v;
+    @SerializedName(value = "__v")
+    private Integer v;
 }
