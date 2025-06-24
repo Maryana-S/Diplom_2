@@ -1,12 +1,12 @@
 {
-  "uid" : "1af5adea592b4ddf",
+  "uid" : "3523287a6689b14c",
   "name" : "При создании пользователя со значениями email, который был зарегестрирован ранее, в ответе возвращается код 403 Forbidden с сообщением 'User already exists'",
   "fullName" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest.registerUserSameEmailForbiddenTest",
   "historyId" : "2768825830f9f8f9d4174923c0921d47",
   "time" : {
-    "start" : 1750746203600,
-    "stop" : 1750746204489,
-    "duration" : 889
+    "start" : 1750772692916,
+    "stop" : 1750772693722,
+    "duration" : 806
   },
   "description" : "Отправка POST запроса на эндпоинт /api/auth/register со значением email, ранее зарегистрированного пользователя",
   "descriptionHtml" : "<p>Отправка POST запроса на эндпоинт /api/auth/register со значением email, ранее зарегистрированного пользователя</p>\n",
@@ -20,109 +20,109 @@
     "steps" : [ {
       "name" : "Предустановка",
       "time" : {
-        "start" : 1750746203601,
-        "stop" : 1750746203601,
+        "start" : 1750772692916,
+        "stop" : 1750772692916,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Инициализация параметров: email, password, name, registerRequest",
       "time" : {
-        "start" : 1750746203601,
-        "stop" : 1750746203601,
+        "start" : 1750772692916,
+        "stop" : 1750772692916,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
       "time" : {
-        "start" : 1750746203601,
-        "stop" : 1750746203785,
-        "duration" : 184
+        "start" : 1750772692916,
+        "stop" : 1750772693123,
+        "duration" : 207
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "registerRequest",
-        "value" : "RegisterRequest(email=iejvd@ya.ru, password=8xZ1yJbwA, name=bRJlXQf)"
+        "value" : "RegisterRequest(email=IXbQp@ya.ru, password=Fm5hhHKbx, name=wOxmEal)"
       } ],
-      "stepsCount" : 0,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
       "time" : {
-        "start" : 1750746203785,
-        "stop" : 1750746203903,
-        "duration" : 118
+        "start" : 1750772693123,
+        "stop" : 1750772693235,
+        "duration" : 112
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "registerRequest",
-        "value" : "RegisterRequest(email=test@ya.ru, password=8xZ1yJbwA, name=Test)"
+        "value" : "RegisterRequest(email=test@ya.ru, password=Fm5hhHKbx, name=Test)"
       } ],
-      "stepsCount" : 0,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Удаление созданного пользователя",
       "time" : {
-        "start" : 1750746203903,
-        "stop" : 1750746204489,
-        "duration" : 586
+        "start" : 1750772693235,
+        "stop" : 1750772693722,
+        "duration" : 487
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
         "time" : {
-          "start" : 1750746203903,
-          "stop" : 1750746204489,
-          "duration" : 586
+          "start" : 1750772693235,
+          "stop" : 1750772693722,
+          "duration" : 487
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "accessToken",
-          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE0NDNjOWVkMjgwMDAxYjYzMTlhMiIsImlhdCI6MTc1MDc0NjE3MiwiZXhwIjoxNzUwNzQ3MzcyfQ.AB--TADYKuXt9c0eUYJiIoUmiqENRM6w7An0ZCZQKRI"
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmIzOWVkMjgwMDAxYjYzMjI0MyIsImlhdCI6MTc1MDc3MjY1OSwiZXhwIjoxNzUwNzczODU5fQ.XaPZu7LetTfeMjEmWtRtk9-fiKcGNkGyWBSdjHDGJas"
         } ],
-        "stepsCount" : 0,
         "hasContent" : true,
-        "shouldDisplayMessage" : false,
-        "attachmentsCount" : 0
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 6,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -142,7 +142,7 @@
     "value" : "matebook_stolyk"
   }, {
     "name" : "thread",
-    "value" : "11756@matebook_stolyk.main(1)"
+    "value" : "19288@matebook_stolyk.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -163,6 +163,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1af5adea592b4ddf.json",
+  "source" : "3523287a6689b14c.json",
   "parameterValues" : [ ]
 }

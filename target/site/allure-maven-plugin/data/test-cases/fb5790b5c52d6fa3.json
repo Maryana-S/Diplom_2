@@ -1,12 +1,12 @@
 {
-  "uid" : "c5e2d4e64134bab9",
+  "uid" : "fb5790b5c52d6fa3",
   "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь не авторизован",
   "fullName" : "site.nomoreparties.stellarburgers.tests.OrdersTest.createOrderWithoutIngredientsBadRequestTest",
   "historyId" : "9c7160d3d54bea389e3c77600711d116",
   "time" : {
-    "start" : 1750746193956,
-    "stop" : 1750746194849,
-    "duration" : 893
+    "start" : 1750772684309,
+    "stop" : 1750772685132,
+    "duration" : 823
   },
   "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации с пустым значением в поле 'ingredients'",
   "descriptionHtml" : "<p>Отправка POST-запрса на эндпоинт /api/orders без авторизации с пустым значением в поле 'ingredients'</p>\n",
@@ -20,75 +20,75 @@
     "steps" : [ {
       "name" : "Предустановка",
       "time" : {
-        "start" : 1750746193956,
-        "stop" : 1750746193956,
+        "start" : 1750772684309,
+        "stop" : 1750772684309,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
       "time" : {
-        "start" : 1750746193956,
-        "stop" : 1750746194143,
-        "duration" : 187
+        "start" : 1750772684309,
+        "stop" : 1750772684508,
+        "duration" : 199
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Регистрация пользователя",
         "time" : {
-          "start" : 1750746193956,
-          "stop" : 1750746194143,
-          "duration" : 187
+          "start" : 1750772684309,
+          "stop" : 1750772684508,
+          "duration" : 199
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
           "time" : {
-            "start" : 1750746193956,
-            "stop" : 1750746194143,
-            "duration" : 187
+            "start" : 1750772684309,
+            "stop" : 1750772684508,
+            "duration" : 199
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ {
             "name" : "registerRequest",
-            "value" : "RegisterRequest(email=hRtgJ@ya.ru, password=Gcfm0BbjY, name=CNDVeRg)"
+            "value" : "RegisterRequest(email=MTIzX@ya.ru, password=MsUXdUgbB, name=ePyDHjg)"
           } ],
-          "stepsCount" : 0,
           "hasContent" : true,
-          "shouldDisplayMessage" : false,
-          "attachmentsCount" : 0
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "registerRequest",
-          "value" : "RegisterRequest(email=hRtgJ@ya.ru, password=Gcfm0BbjY, name=CNDVeRg)"
+          "value" : "RegisterRequest(email=MTIzX@ya.ru, password=MsUXdUgbB, name=ePyDHjg)"
         } ],
-        "stepsCount" : 1,
         "hasContent" : true,
-        "shouldDisplayMessage" : false,
-        "attachmentsCount" : 0
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 2,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Отправка POST запроса на эндпоинт /api/orders. Создание заказа, пользователь не авторизован",
       "time" : {
-        "start" : 1750746194143,
-        "stop" : 1750746194262,
-        "duration" : 119
+        "start" : 1750772684508,
+        "stop" : 1750772684625,
+        "duration" : 117
       },
       "status" : "passed",
       "steps" : [ ],
@@ -97,50 +97,50 @@
         "name" : "ordersRequest",
         "value" : "OrdersRequest(ingredients=[])"
       } ],
-      "stepsCount" : 0,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Удаление созданного пользователя",
       "time" : {
-        "start" : 1750746194263,
-        "stop" : 1750746194849,
-        "duration" : 586
+        "start" : 1750772684626,
+        "stop" : 1750772685132,
+        "duration" : 506
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
         "time" : {
-          "start" : 1750746194263,
-          "stop" : 1750746194849,
-          "duration" : 586
+          "start" : 1750772684626,
+          "stop" : 1750772685132,
+          "duration" : 506
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "accessToken",
-          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE0NDMyOWVkMjgwMDAxYjYzMTk5MSIsImlhdCI6MTc1MDc0NjE2MiwiZXhwIjoxNzUwNzQ3MzYyfQ.B38rD_DxJd55flZQTCkT9c93qjVcRu_33F_NJURcNYo"
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmFiOWVkMjgwMDAxYjYzMjIzMiIsImlhdCI6MTc1MDc3MjY1MSwiZXhwIjoxNzUwNzczODUxfQ.qspa1Ay762FK9wPR11jq58-E3TuYxqWR-ZOZC0Vl4CI"
         } ],
-        "stepsCount" : 0,
         "hasContent" : true,
-        "shouldDisplayMessage" : false,
-        "attachmentsCount" : 0
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 7,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -160,7 +160,7 @@
     "value" : "matebook_stolyk"
   }, {
     "name" : "thread",
-    "value" : "11756@matebook_stolyk.main(1)"
+    "value" : "19288@matebook_stolyk.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -181,6 +181,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c5e2d4e64134bab9.json",
+  "source" : "fb5790b5c52d6fa3.json",
   "parameterValues" : [ ]
 }

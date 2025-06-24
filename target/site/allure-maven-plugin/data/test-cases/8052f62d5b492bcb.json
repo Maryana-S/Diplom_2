@@ -1,57 +1,57 @@
 {
-  "uid" : "ec3d4fac41b96fad",
-  "name" : "При создании пользователя с незаполненным значением password, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
-  "fullName" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest.registerUserEmptyPasswordForbiddenTest",
-  "historyId" : "35e7750a1030078ffd4a08d031c0b1bf",
+  "uid" : "8052f62d5b492bcb",
+  "name" : "При создании пользователя с незаполненным значением email, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest.registerUserEmptyEmailForbiddenTest",
+  "historyId" : "45b12be9ba35f4c8641137dacd021b4d",
   "time" : {
-    "start" : 1750746203482,
-    "stop" : 1750746203599,
-    "duration" : 117
+    "start" : 1750772691998,
+    "stop" : 1750772692114,
+    "duration" : 116
   },
-  "description" : "Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением password",
-  "descriptionHtml" : "<p>Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением password</p>\n",
+  "description" : "Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением email",
+  "descriptionHtml" : "<p>Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением email</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
-    "description" : "Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением password",
+    "description" : "Отправка POST запроса на эндпоинт /api/auth/register незаполненным значением email",
     "status" : "passed",
     "steps" : [ {
       "name" : "Предустановка",
       "time" : {
-        "start" : 1750746203482,
-        "stop" : 1750746203482,
+        "start" : 1750772691998,
+        "stop" : 1750772691998,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Инициализация параметров: email, password, name, registerRequest",
       "time" : {
-        "start" : 1750746203482,
-        "stop" : 1750746203482,
+        "start" : 1750772691998,
+        "stop" : 1750772691998,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
       "time" : {
-        "start" : 1750746203482,
-        "stop" : 1750746203598,
+        "start" : 1750772691998,
+        "stop" : 1750772692114,
         "duration" : 116
       },
       "status" : "passed",
@@ -59,34 +59,34 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "registerRequest",
-        "value" : "RegisterRequest(email=bINJb@ya.ru, password=, name=TxzqINl)"
+        "value" : "RegisterRequest(email=, password=tVxgqzDsD, name=tmjXBbR)"
       } ],
-      "stepsCount" : 0,
       "hasContent" : true,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Удаление созданного пользователя",
       "time" : {
-        "start" : 1750746203599,
-        "stop" : 1750746203599,
+        "start" : 1750772692114,
+        "stop" : 1750772692114,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest"
   }, {
     "name" : "testMethod",
-    "value" : "registerUserEmptyPasswordForbiddenTest"
+    "value" : "registerUserEmptyEmailForbiddenTest"
   }, {
     "name" : "suite",
     "value" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest"
@@ -106,7 +106,7 @@
     "value" : "matebook_stolyk"
   }, {
     "name" : "thread",
-    "value" : "11756@matebook_stolyk.main(1)"
+    "value" : "19288@matebook_stolyk.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -127,6 +127,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ec3d4fac41b96fad.json",
+  "source" : "8052f62d5b492bcb.json",
   "parameterValues" : [ ]
 }
