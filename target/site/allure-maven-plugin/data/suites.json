@@ -1,0 +1,251 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "site.nomoreparties.stellarburgers.tests.LoginUserTest",
+    "children" : [ {
+      "name" : "При автроизации пользователя с некорректным значением в поле password, в ответе возвращается код 401 Unauthorized",
+      "uid" : "63d4ffbc3f527d2f",
+      "parentUid" : "cec3b75e305d083558b6a4d702256278",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746181646,
+        "stop" : 1750746184973,
+        "duration" : 3327
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешная авторизация пользователя в системе. Проверка, что значения полей name и email в ответе, соответствуют значениям полей в запросе",
+      "uid" : "799a29fea6794464",
+      "parentUid" : "cec3b75e305d083558b6a4d702256278",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746185043,
+        "stop" : 1750746186014,
+        "duration" : 971
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешная авторизация пользователя в системе",
+      "uid" : "4d3545d2f50a6e32",
+      "parentUid" : "cec3b75e305d083558b6a4d702256278",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746186035,
+        "stop" : 1750746187002,
+        "duration" : 967
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При автроизации пользователя с некорректным значением в поле email, в ответе возвращается код 401 Unauthorized",
+      "uid" : "8e3d37c726abbcc2",
+      "parentUid" : "cec3b75e305d083558b6a4d702256278",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746187007,
+        "stop" : 1750746187893,
+        "duration" : 886
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cec3b75e305d083558b6a4d702256278"
+  }, {
+    "name" : "site.nomoreparties.stellarburgers.tests.OrdersTest",
+    "children" : [ {
+      "name" : "Успешное создание заказа без авторизации пользователя в системе",
+      "uid" : "cade1817fa0958b6",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746187897,
+        "stop" : 1750746188914,
+        "duration" : 1017
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешное создание заказа с тремя ингридиентами зарегистрированным пользователем",
+      "uid" : "9879e43a3ed19c5c",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746188916,
+        "stop" : 1750746192856,
+        "duration" : 3940
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь авторизован",
+      "uid" : "8a53fea619dec51",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746192859,
+        "stop" : 1750746193954,
+        "duration" : 1095
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь не авторизован",
+      "uid" : "c5e2d4e64134bab9",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746193956,
+        "stop" : 1750746194849,
+        "duration" : 893
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешное создание заказа с тремя ингридиентами незарегистрированным пользователем",
+      "uid" : "ed2c07a56409038",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746194857,
+        "stop" : 1750746196082,
+        "duration" : 1225
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Успешное создание заказа с авторизацией пользователя в системе, проверка соответсятвия значений email пользователя и id ингредиента",
+      "uid" : "2792d59b2e01f39b",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746196083,
+        "stop" : 1750746199752,
+        "duration" : 3669
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь не авторизован",
+      "uid" : "9fbc9c7fafd546d9",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746199755,
+        "stop" : 1750746200620,
+        "duration" : 865
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь авторизован",
+      "uid" : "114319f89f8d86e6",
+      "parentUid" : "fca7417b72e11a991c1273822a8a1bb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746200622,
+        "stop" : 1750746201714,
+        "duration" : 1092
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fca7417b72e11a991c1273822a8a1bb1"
+  }, {
+    "name" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest",
+    "children" : [ {
+      "name" : "Успешное создание уникального пользователя",
+      "uid" : "830f70c8fe761890",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746201717,
+        "stop" : 1750746202478,
+        "duration" : 761
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании пользователя с незаполненным значением name, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+      "uid" : "3eadb90d6846cb88",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746202480,
+        "stop" : 1750746202591,
+        "duration" : 111
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании пользователя с незаполненным значением email, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+      "uid" : "c90380db55a615db",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746202602,
+        "stop" : 1750746202716,
+        "duration" : 114
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Создание уникального пользователя. Проверка, что значения полей name и email в ответе соответствуют значениям полей в запросе",
+      "uid" : "92ef80dabb87585e",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746202718,
+        "stop" : 1750746203478,
+        "duration" : 760
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании пользователя с незаполненным значением password, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+      "uid" : "ec3d4fac41b96fad",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746203482,
+        "stop" : 1750746203599,
+        "duration" : 117
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "При создании пользователя со значениями email, который был зарегестрирован ранее, в ответе возвращается код 403 Forbidden с сообщением 'User already exists'",
+      "uid" : "1af5adea592b4ddf",
+      "parentUid" : "446b3336862c47b4a205c67c8f6b0197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750746203600,
+        "stop" : 1750746204489,
+        "duration" : 889
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "446b3336862c47b4a205c67c8f6b0197"
+  } ]
+}

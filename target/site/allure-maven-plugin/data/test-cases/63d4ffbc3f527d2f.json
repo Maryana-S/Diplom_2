@@ -1,0 +1,186 @@
+{
+  "uid" : "63d4ffbc3f527d2f",
+  "name" : "При автроизации пользователя с некорректным значением в поле password, в ответе возвращается код 401 Unauthorized",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.LoginUserTest.loginIncorrectPasswordUnauthorizedTest",
+  "historyId" : "634639da5b1ed58c63d460036ba577f3",
+  "time" : {
+    "start" : 1750746181646,
+    "stop" : 1750746184973,
+    "duration" : 3327
+  },
+  "description" : "Отправка POST запроса на эндпоинт /api/auth/login c некорректным password",
+  "descriptionHtml" : "<p>Отправка POST запроса на эндпоинт /api/auth/login c некорректным password</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Отправка POST запроса на эндпоинт /api/auth/login c некорректным password",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Предустановка",
+      "time" : {
+        "start" : 1750746181682,
+        "stop" : 1750746182353,
+        "duration" : 671
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
+      "time" : {
+        "start" : 1750746182353,
+        "stop" : 1750746184144,
+        "duration" : 1791
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Регистрация пользователя",
+        "time" : {
+          "start" : 1750746182417,
+          "stop" : 1750746184144,
+          "duration" : 1727
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
+          "time" : {
+            "start" : 1750746182429,
+            "stop" : 1750746184081,
+            "duration" : 1652
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerRequest",
+            "value" : "RegisterRequest(email=IvIDR@ya.ru, password=CQOlp4SIy, name=tsalVrD)"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerRequest",
+          "value" : "RegisterRequest(email=IvIDR@ya.ru, password=CQOlp4SIy, name=tsalVrD)"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Отправка POST запроса на эндпоинт /api/auth/login. Авторизация пользователя",
+      "time" : {
+        "start" : 1750746184148,
+        "stop" : 1750746184359,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginRequest",
+        "value" : "LoginRequest(email=IvIDR@ya.ru, password=IncorrectPass)"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление созданного пользователя",
+      "time" : {
+        "start" : 1750746184361,
+        "stop" : 1750746184971,
+        "duration" : 610
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
+        "time" : {
+          "start" : 1750746184361,
+          "stop" : 1750746184971,
+          "duration" : 610
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWE0NDI4OWVkMjgwMDAxYjYzMTk3ZSIsImlhdCI6MTc1MDc0NjE1MiwiZXhwIjoxNzUwNzQ3MzUyfQ.fiTVw3G7fBxWBA3hE5wmDgItlZ6BR15I_tIV6wobpNI"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "site.nomoreparties.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "site.nomoreparties.stellarburgers.tests.LoginUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginIncorrectPasswordUnauthorizedTest"
+  }, {
+    "name" : "suite",
+    "value" : "site.nomoreparties.stellarburgers.tests.LoginUserTest"
+  }, {
+    "name" : "host",
+    "value" : "matebook_stolyk"
+  }, {
+    "name" : "thread",
+    "value" : "11756@matebook_stolyk.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63d4ffbc3f527d2f.json",
+  "parameterValues" : [ ]
+}

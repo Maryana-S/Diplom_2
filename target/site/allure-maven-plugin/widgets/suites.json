@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "fca7417b72e11a991c1273822a8a1bb1",
+    "name" : "site.nomoreparties.stellarburgers.tests.OrdersTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "446b3336862c47b4a205c67c8f6b0197",
+    "name" : "site.nomoreparties.stellarburgers.tests.RegisterUserTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "cec3b75e305d083558b6a4d702256278",
+    "name" : "site.nomoreparties.stellarburgers.tests.LoginUserTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}
