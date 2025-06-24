@@ -48,7 +48,7 @@ public class Requests {
                 .post(ORDERS);
     }
 
-    @Step("Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление курьера")
+    @Step("Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя")
     public static void deleteUser(String accessToken) {
         given()
                 .header("Authorization", accessToken)
