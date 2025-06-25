@@ -1,0 +1,186 @@
+{
+  "uid" : "c350879d4cef5221",
+  "name" : "Успешная авторизация пользователя в системе",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.LoginUserTest.loginExistingUserSuccessTest",
+  "historyId" : "4bb56693157c737b7c708e91d2fa663c",
+  "time" : {
+    "start" : 1750772677202,
+    "stop" : 1750772678112,
+    "duration" : 910
+  },
+  "description" : "Отправка POST запроса на эндпоинт /api/auth/login c параметрами email и password существующего пользователя",
+  "descriptionHtml" : "<p>Отправка POST запроса на эндпоинт /api/auth/login c параметрами email и password существующего пользователя</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Отправка POST запроса на эндпоинт /api/auth/login c параметрами email и password существующего пользователя",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Предустановка",
+      "time" : {
+        "start" : 1750772677202,
+        "stop" : 1750772677202,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
+      "time" : {
+        "start" : 1750772677202,
+        "stop" : 1750772677411,
+        "duration" : 209
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Регистрация пользователя",
+        "time" : {
+          "start" : 1750772677202,
+          "stop" : 1750772677411,
+          "duration" : 209
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
+          "time" : {
+            "start" : 1750772677202,
+            "stop" : 1750772677410,
+            "duration" : 208
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerRequest",
+            "value" : "RegisterRequest(email=mWpJp@ya.ru, password=Tl18YKhVz, name=essrnif)"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerRequest",
+          "value" : "RegisterRequest(email=mWpJp@ya.ru, password=Tl18YKhVz, name=essrnif)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка POST запроса на эндпоинт /api/auth/login. Авторизация пользователя",
+      "time" : {
+        "start" : 1750772677412,
+        "stop" : 1750772677615,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginRequest",
+        "value" : "LoginRequest(email=mWpJp@ya.ru, password=Tl18YKhVz)"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление созданного пользователя",
+      "time" : {
+        "start" : 1750772677617,
+        "stop" : 1750772678098,
+        "duration" : 481
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
+        "time" : {
+          "start" : 1750772677617,
+          "stop" : 1750772678098,
+          "duration" : 481
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmE0OWVkMjgwMDAxYjYzMjIyNCIsImlhdCI6MTc1MDc3MjY0NCwiZXhwIjoxNzUwNzczODQ0fQ.MoH_myGlowRs_2X2p58NQ7Bn2AviRqljwiVmByExTAQ"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "site.nomoreparties.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "site.nomoreparties.stellarburgers.tests.LoginUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginExistingUserSuccessTest"
+  }, {
+    "name" : "suite",
+    "value" : "site.nomoreparties.stellarburgers.tests.LoginUserTest"
+  }, {
+    "name" : "host",
+    "value" : "matebook_stolyk"
+  }, {
+    "name" : "thread",
+    "value" : "19288@matebook_stolyk.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c350879d4cef5221.json",
+  "parameterValues" : [ ]
+}

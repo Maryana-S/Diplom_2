@@ -1,0 +1,219 @@
+{
+  "uid" : "da3f16f49174255",
+  "name" : "Успешное создание заказа без авторизации пользователя в системе",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.OrdersTest.createOrderWithoutLoginUserSuccessTest",
+  "historyId" : "40658e8a3f0705c50c253023507cee35",
+  "time" : {
+    "start" : 1750772678952,
+    "stop" : 1750772679899,
+    "duration" : 947
+  },
+  "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации подьзователя. Проверка, что в ответе возвращается номер заказа",
+  "descriptionHtml" : "<p>Отправка POST-запрса на эндпоинт /api/orders без авторизации подьзователя. Проверка, что в ответе возвращается номер заказа</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации подьзователя. Проверка, что в ответе возвращается номер заказа",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Предустановка",
+      "time" : {
+        "start" : 1750772678952,
+        "stop" : 1750772678952,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
+      "time" : {
+        "start" : 1750772678957,
+        "stop" : 1750772679129,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Регистрация пользователя",
+        "time" : {
+          "start" : 1750772678957,
+          "stop" : 1750772679129,
+          "duration" : 172
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
+          "time" : {
+            "start" : 1750772678957,
+            "stop" : 1750772679128,
+            "duration" : 171
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerRequest",
+            "value" : "RegisterRequest(email=JzObH@ya.ru, password=MaZ0mpoPn, name=adNcmCD)"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerRequest",
+          "value" : "RegisterRequest(email=JzObH@ya.ru, password=MaZ0mpoPn, name=adNcmCD)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Получение значения ingredientId по индексу",
+      "time" : {
+        "start" : 1750772679130,
+        "stop" : 1750772679253,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка GET запроса на эндпоинт /api/ingredients. Получение данных об ингредиентах",
+        "time" : {
+          "start" : 1750772679130,
+          "stop" : 1750772679246,
+          "duration" : 116
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка POST запроса на эндпоинт /api/orders. Создание заказа, пользователь не авторизован",
+      "time" : {
+        "start" : 1750772679254,
+        "stop" : 1750772679381,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ordersRequest",
+        "value" : "OrdersRequest(ingredients=[61c0c5a71d1f82001bdaaa6d])"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление созданного пользователя",
+      "time" : {
+        "start" : 1750772679386,
+        "stop" : 1750772679899,
+        "duration" : 513
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
+        "time" : {
+          "start" : 1750772679387,
+          "stop" : 1750772679899,
+          "duration" : 512
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmE1OWVkMjgwMDAxYjYzMjIyOSIsImlhdCI6MTc1MDc3MjY0NSwiZXhwIjoxNzUwNzczODQ1fQ.A2lzHViMdMjIN7Eah7tv5bjVEqWht6c5U4pd7nvkVqY"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "site.nomoreparties.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderWithoutLoginUserSuccessTest"
+  }, {
+    "name" : "suite",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "host",
+    "value" : "matebook_stolyk"
+  }, {
+    "name" : "thread",
+    "value" : "19288@matebook_stolyk.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da3f16f49174255.json",
+  "parameterValues" : [ ]
+}

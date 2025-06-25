@@ -1,0 +1,186 @@
+{
+  "uid" : "19ab1e28a44f52f0",
+  "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь не авторизован",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.OrdersTest.createOrderWithIncorrectIngredientErrorTest",
+  "historyId" : "20e5b49c175524d17944b357c2d08baf",
+  "time" : {
+    "start" : 1750772689373,
+    "stop" : 1750772690176,
+    "duration" : 803
+  },
+  "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'",
+  "descriptionHtml" : "<p>Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Предустановка",
+      "time" : {
+        "start" : 1750772689373,
+        "stop" : 1750772689373,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
+      "time" : {
+        "start" : 1750772689373,
+        "stop" : 1750772689566,
+        "duration" : 193
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Регистрация пользователя",
+        "time" : {
+          "start" : 1750772689373,
+          "stop" : 1750772689566,
+          "duration" : 193
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
+          "time" : {
+            "start" : 1750772689373,
+            "stop" : 1750772689566,
+            "duration" : 193
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerRequest",
+            "value" : "RegisterRequest(email=FtNbs@ya.ru, password=MEpXkAwOv, name=kiTiQOo)"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerRequest",
+          "value" : "RegisterRequest(email=FtNbs@ya.ru, password=MEpXkAwOv, name=kiTiQOo)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка POST запроса на эндпоинт /api/orders. Создание заказа, пользователь не авторизован",
+      "time" : {
+        "start" : 1750772689566,
+        "stop" : 1750772689679,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ordersRequest",
+        "value" : "OrdersRequest(ingredients=[ZRq9Y6jcjtA87Kt])"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление созданного пользователя",
+      "time" : {
+        "start" : 1750772689681,
+        "stop" : 1750772690175,
+        "duration" : 494
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
+        "time" : {
+          "start" : 1750772689681,
+          "stop" : 1750772690175,
+          "duration" : 494
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmIwOWVkMjgwMDAxYjYzMjIzYSIsImlhdCI6MTc1MDc3MjY1NiwiZXhwIjoxNzUwNzczODU2fQ.jq7pj6zyWo3zn96Bh-P80GHh9rDh8FPDxtWsl6_Te9A"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "site.nomoreparties.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderWithIncorrectIngredientErrorTest"
+  }, {
+    "name" : "suite",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "host",
+    "value" : "matebook_stolyk"
+  }, {
+    "name" : "thread",
+    "value" : "19288@matebook_stolyk.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19ab1e28a44f52f0.json",
+  "parameterValues" : [ ]
+}

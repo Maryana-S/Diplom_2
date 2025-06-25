@@ -1,0 +1,225 @@
+{
+  "uid" : "12d5eeab86b6c90c",
+  "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь авторизован",
+  "fullName" : "site.nomoreparties.stellarburgers.tests.OrdersTest.createOrderWithIncorrectIngredientAndLoginErrorTest",
+  "historyId" : "e364f7d395e62e63236bbe918496b78b",
+  "time" : {
+    "start" : 1750772690178,
+    "stop" : 1750772691176,
+    "duration" : 998
+  },
+  "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'",
+  "descriptionHtml" : "<p>Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Отправка POST-запрса на эндпоинт /api/orders без авторизации с невалидным хешем ингредиента в поле 'ingredients'",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Предустановка",
+      "time" : {
+        "start" : 1750772690178,
+        "stop" : 1750772690178,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Инициализация параметров: email, password, name, registerRequest, loginRequest, registerSuccessResponse",
+      "time" : {
+        "start" : 1750772690178,
+        "stop" : 1750772690378,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Регистрация пользователя",
+        "time" : {
+          "start" : 1750772690178,
+          "stop" : 1750772690378,
+          "duration" : 200
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Отправка POST запроса на эндпоинт /api/auth/register. Регистрация пользователя",
+          "time" : {
+            "start" : 1750772690178,
+            "stop" : 1750772690378,
+            "duration" : 200
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "registerRequest",
+            "value" : "RegisterRequest(email=caLvu@ya.ru, password=Vd6UhZriB, name=ByfCapN)"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "registerRequest",
+          "value" : "RegisterRequest(email=caLvu@ya.ru, password=Vd6UhZriB, name=ByfCapN)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Получение значения accessToken",
+      "time" : {
+        "start" : 1750772690378,
+        "stop" : 1750772690572,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка POST запроса на эндпоинт /api/auth/login. Авторизация пользователя",
+        "time" : {
+          "start" : 1750772690379,
+          "stop" : 1750772690570,
+          "duration" : 191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "loginRequest",
+          "value" : "LoginRequest(email=caLvu@ya.ru, password=Vd6UhZriB)"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginRequest",
+        "value" : "LoginRequest(email=caLvu@ya.ru, password=Vd6UhZriB)"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка POST запроса на эндпоинт /api/orders. Создание заказа, пользователь авторизован",
+      "time" : {
+        "start" : 1750772690572,
+        "stop" : 1750772690684,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ordersRequest",
+        "value" : "OrdersRequest(ingredients=[FxIJdTsOciu112r])"
+      }, {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmIxOWVkMjgwMDAxYjYzMjIzYyIsImlhdCI6MTc1MDc3MjY1NywiZXhwIjoxNzUwNzczODU3fQ.NrCYZIqZqixjutKbIRsJ4milOyATSkEVR1nAgmpX3bs"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление созданного пользователя",
+      "time" : {
+        "start" : 1750772690684,
+        "stop" : 1750772691176,
+        "duration" : 492
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправка DELETE запроса на эндпоинт /api/auth/user. Удаление пользователя",
+        "time" : {
+          "start" : 1750772690684,
+          "stop" : 1750772691176,
+          "duration" : 492
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "accessToken",
+          "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWFhYmIxOWVkMjgwMDAxYjYzMjIzYyIsImlhdCI6MTc1MDc3MjY1NywiZXhwIjoxNzUwNzczODU3fQ.NrCYZIqZqixjutKbIRsJ4milOyATSkEVR1nAgmpX3bs"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "site.nomoreparties.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderWithIncorrectIngredientAndLoginErrorTest"
+  }, {
+    "name" : "suite",
+    "value" : "site.nomoreparties.stellarburgers.tests.OrdersTest"
+  }, {
+    "name" : "host",
+    "value" : "matebook_stolyk"
+  }, {
+    "name" : "thread",
+    "value" : "19288@matebook_stolyk.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12d5eeab86b6c90c.json",
+  "parameterValues" : [ ]
+}

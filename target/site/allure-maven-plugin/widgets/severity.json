@@ -1,0 +1,181 @@
+[ {
+  "uid" : "514db5722b3b3a41",
+  "name" : "Успешное создание заказа с авторизацией пользователя в системе, проверка соответсятвия значений email пользователя и id ингредиента",
+  "time" : {
+    "start" : 1750772686279,
+    "stop" : 1750772689370,
+    "duration" : 3091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2818844e121219dc",
+  "name" : "Успешное создание заказа с тремя ингридиентами незарегистрированным пользователем",
+  "time" : {
+    "start" : 1750772685134,
+    "stop" : 1750772686271,
+    "duration" : 1137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19ab1e28a44f52f0",
+  "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь не авторизован",
+  "time" : {
+    "start" : 1750772689373,
+    "stop" : 1750772690176,
+    "duration" : 803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "197a69c66558943e",
+  "name" : "Успешное создание заказа с тремя ингридиентами зарегистрированным пользователем",
+  "time" : {
+    "start" : 1750772679901,
+    "stop" : 1750772683298,
+    "duration" : 3397
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3523287a6689b14c",
+  "name" : "При создании пользователя со значениями email, который был зарегестрирован ранее, в ответе возвращается код 403 Forbidden с сообщением 'User already exists'",
+  "time" : {
+    "start" : 1750772692916,
+    "stop" : 1750772693722,
+    "duration" : 806
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "168c121f1a0a214b",
+  "name" : "При создании пользователя с незаполненным значением name, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+  "time" : {
+    "start" : 1750772691883,
+    "stop" : 1750772691996,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3722ec5df64d9097",
+  "name" : "При автроизации пользователя с некорректным значением в поле password, в ответе возвращается код 401 Unauthorized",
+  "time" : {
+    "start" : 1750772671570,
+    "stop" : 1750772676186,
+    "duration" : 4616
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9abd4d89eeae266d",
+  "name" : "Успешная авторизация пользователя в системе. Проверка, что значения полей name и email в ответе, соответствуют значениям полей в запросе",
+  "time" : {
+    "start" : 1750772676254,
+    "stop" : 1750772677197,
+    "duration" : 943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b24af29b3e6acd2",
+  "name" : "При создании пользователя с незаполненным значением password, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+  "time" : {
+    "start" : 1750772692800,
+    "stop" : 1750772692916,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfdf223d40fb3763",
+  "name" : "При автроизации пользователя с некорректным значением в поле email, в ответе возвращается код 401 Unauthorized",
+  "time" : {
+    "start" : 1750772678131,
+    "stop" : 1750772678952,
+    "duration" : 821
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c350879d4cef5221",
+  "name" : "Успешная авторизация пользователя в системе",
+  "time" : {
+    "start" : 1750772677202,
+    "stop" : 1750772678112,
+    "duration" : 910
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb5790b5c52d6fa3",
+  "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь не авторизован",
+  "time" : {
+    "start" : 1750772684309,
+    "stop" : 1750772685132,
+    "duration" : 823
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c49ea96b7aad34c",
+  "name" : "При создании заказа без ингредиентов возвращается код ответа 400 Bad Request. Пользователь авторизован",
+  "time" : {
+    "start" : 1750772683305,
+    "stop" : 1750772684307,
+    "duration" : 1002
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12d5eeab86b6c90c",
+  "name" : "При создании заказа c невалидным хешем ингредиента возвращается код ответа 500 Internal Server Error. Пользователь авторизован",
+  "time" : {
+    "start" : 1750772690178,
+    "stop" : 1750772691176,
+    "duration" : 998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13cf11413414f38",
+  "name" : "Создание уникального пользователя. Проверка, что значения полей name и email в ответе соответствуют значениям полей в запросе",
+  "time" : {
+    "start" : 1750772692115,
+    "stop" : 1750772692800,
+    "duration" : 685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da3f16f49174255",
+  "name" : "Успешное создание заказа без авторизации пользователя в системе",
+  "time" : {
+    "start" : 1750772678952,
+    "stop" : 1750772679899,
+    "duration" : 947
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97169d861ef74ba2",
+  "name" : "Успешное создание уникального пользователя",
+  "time" : {
+    "start" : 1750772691180,
+    "stop" : 1750772691883,
+    "duration" : 703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8052f62d5b492bcb",
+  "name" : "При создании пользователя с незаполненным значением email, в ответе возвращается код 403 Forbidden с сообщением 'Email, password and name are required fields'",
+  "time" : {
+    "start" : 1750772691998,
+    "stop" : 1750772692114,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

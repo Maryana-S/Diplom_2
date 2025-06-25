@@ -1,0 +1,243 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "site.nomoreparties.stellarburgers.tests",
+    "children" : [ {
+      "name" : "loginIncorrectPasswordUnauthorizedTest",
+      "uid" : "3722ec5df64d9097",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772671570,
+        "stop" : 1750772676186,
+        "duration" : 4616
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginExistingUserReturnEqualsCredentialsTest",
+      "uid" : "9abd4d89eeae266d",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772676254,
+        "stop" : 1750772677197,
+        "duration" : 943
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginExistingUserSuccessTest",
+      "uid" : "c350879d4cef5221",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772677202,
+        "stop" : 1750772678112,
+        "duration" : 910
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginIncorrectEmailUnauthorizedTest",
+      "uid" : "bfdf223d40fb3763",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772678131,
+        "stop" : 1750772678952,
+        "duration" : 821
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithoutLoginUserSuccessTest",
+      "uid" : "da3f16f49174255",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772678952,
+        "stop" : 1750772679899,
+        "duration" : 947
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithThreeIngredientsWithLoginSuccessTest",
+      "uid" : "197a69c66558943e",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772679901,
+        "stop" : 1750772683298,
+        "duration" : 3397
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithoutIngredientsAndLoginBadRequestTest",
+      "uid" : "9c49ea96b7aad34c",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772683305,
+        "stop" : 1750772684307,
+        "duration" : 1002
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithoutIngredientsBadRequestTest",
+      "uid" : "fb5790b5c52d6fa3",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772684309,
+        "stop" : 1750772685132,
+        "duration" : 823
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithThreeIngredientsWithoutLoginSuccessTest",
+      "uid" : "2818844e121219dc",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772685134,
+        "stop" : 1750772686271,
+        "duration" : 1137
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderLoginUserSuccessTest",
+      "uid" : "514db5722b3b3a41",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772686279,
+        "stop" : 1750772689370,
+        "duration" : 3091
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithIncorrectIngredientErrorTest",
+      "uid" : "19ab1e28a44f52f0",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772689373,
+        "stop" : 1750772690176,
+        "duration" : 803
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrderWithIncorrectIngredientAndLoginErrorTest",
+      "uid" : "12d5eeab86b6c90c",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772690178,
+        "stop" : 1750772691176,
+        "duration" : 998
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUniqueUserSuccessTest",
+      "uid" : "97169d861ef74ba2",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772691180,
+        "stop" : 1750772691883,
+        "duration" : 703
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUserEmptyNameForbiddenTest",
+      "uid" : "168c121f1a0a214b",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772691883,
+        "stop" : 1750772691996,
+        "duration" : 113
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUserEmptyEmailForbiddenTest",
+      "uid" : "8052f62d5b492bcb",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772691998,
+        "stop" : 1750772692114,
+        "duration" : 116
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUniqueUserReturnEqualsCredentialsTest",
+      "uid" : "13cf11413414f38",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772692115,
+        "stop" : 1750772692800,
+        "duration" : 685
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUserEmptyPasswordForbiddenTest",
+      "uid" : "7b24af29b3e6acd2",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772692800,
+        "stop" : 1750772692916,
+        "duration" : 116
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "registerUserSameEmailForbiddenTest",
+      "uid" : "3523287a6689b14c",
+      "parentUid" : "d1864bbd20799050d4b8a71d7413611b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1750772692916,
+        "stop" : 1750772693722,
+        "duration" : 806
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "site.nomoreparties.stellarburgers.tests"
+  } ]
+}
